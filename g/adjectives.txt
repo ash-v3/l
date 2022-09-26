@@ -1,0 +1,7 @@
+ic == not
+
+ek == quite
+
+ec == very
+
+tai == still

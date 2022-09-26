@@ -1,0 +1,3 @@
+possible:
+SOV SVO VSO
+SO SV VS OV VO

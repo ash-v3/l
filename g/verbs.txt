@@ -1,0 +1,102 @@
+verb: -i -y -e -u -o -a + -s
+
+subject:
+1st 2nd 3nd
+o   e   a
+
+sing: s
+plur: t
+
+object:
+1st 2nd 3rd
+u   y   i
+
+sing: s
+plur: t
+
+interrogative: iv
+imperative: ad
+
+active: et
+passive: es
+
+present: ar
+past: id
+future: av
+
+instant: in
+imperfect: at
+
+real: er
+theoretical: is
+
+reflexive: se
+
+a == to be
+{
+    ica == to not exist
+}
+
+cuea == to question
+{
+    aecuea == to present a question
+    decuea == to take a question
+    cacuea == to formulate a question
+    menscuea == to ponder
+    tacuea == to have a question
+    icuea == to interrogate
+}
+
+roa == to request
+{
+    ekroa == to ask fervently
+    ecroa == to beg
+    abroa == to recall a request
+    coroa == to invite, bring together, collect
+    subroa == to ask something to replace another
+}
+
+sea == to see
+{
+    desea == to notice
+}
+
+seda == to sit
+{
+    vidseda == to sit by
+    cirseda == to sit around / surround
+    perseda == to continue sitting / be idle
+    sedale == suitable as a seat
+    motseda == movable chair
+    icmotseda == non-movable chair
+}
+
+solua == to be the bottom, foundation
+
+pia == to put, lay
+{
+    ipia == to inlay
+}
+
+densa == to be dense
+
+ta == to have
+{
+    icta == to lack
+}
+
+crasa == to be thick
+
+parua == to be small
+
+magna == to be large
+
+masa == to be more
+
+mase == to be the most
+
+pasa == to be less
+
+pase == to be the least
+
+saera == to be a sphere

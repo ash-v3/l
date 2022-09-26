@@ -1,0 +1,6 @@
+a(a, b)    {a=b}
+b(a, b)    {b[a]}
+c(a)       {[a]}
+d(a, x, b)    {a[x] => b[x]}
+e(a, b)    {a[b]}
+f(a, b)    {a if b in a}

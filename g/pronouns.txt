@@ -1,0 +1,38 @@
+personal:
+1st
+va -> vae
+
+2nd:
+sa -> sae
+
+3rd:
+ca -> cae
+
+object: ita -> itae
+indefinite: sea -> seae
+null: øsa -> øsae
+
+demonstrative:
+uisa == this
+uise == that
+uisi == that (far)
+
+correlative:
+basic - ca
+quality - ce
+
+number - cua
+order - cue
+quantity - cui
+size - cuo
+
+manner - uta
+method / path - ute
+
+place - uca
+source - uce
+destination - uci
+
+time - na
+repitition - ne
+multiplication - ni

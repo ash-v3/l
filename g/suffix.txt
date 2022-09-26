@@ -1,0 +1,9 @@
+-oro == b | b does a
+-la == adverb
+-su == adjective
+-nomo == nominal
+-ito == small
+-iso == large
+-isimo == huge
+-le == suitable
+-be == possible
