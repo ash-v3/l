@@ -1,4 +1,5 @@
-a(a, b)    {a=b}
+e (a, b)    {a=b}
+a (a, b)    {a[*] = b}
 b(a, b)    {b[a]}
 c(a)       {[a]}
 d(a, x, b)    {a[x] => b[x]}
