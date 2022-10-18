@@ -1,40 +1,37 @@
 i ī i
 y ȳ y
-í ï ɨ
-ú ü ʉ
 u ū u
-e ē e
-ó ö ø
+ë æ e
+ö œ ø
 o ō o
-ä ɛ
-a ɑ
+e ē ɛ
+a ā ɑ
 
-m
-n
-ɲ
-p
-b
-t̪
-d̪
-k
-g
-t̠ʃ
-d̠ʒ
-pɸ
-bβ
-s
-z
-ʃ
-ʒ
-ɸ
-β
-θ
-ð
-ç
-x
-χ
-h
-ɾ
-r
-l̪
-ɧ
+Āber Fainte blaiben baide und līgen immer auf der Lauer: sī lauern ainer auf dī Schweche des āndern, Kinder auf die der Eltern, und Eltern auf die der Kinder (z. B. ihre Furcht), der Stock überwindet entweder den Menschen oder der Mensch überwindet den Stock.
+
+m m
+n n
+ñ ɲ
+p p
+b b
+t t̪
+d d̪
+k k
+g g
+ċ t̠ʃ
+s s
+z z
+c ʃ
+f ɸ
+v β
+þ θ
+ð ð
+ç ç
+x x
+ẋ χ
+h h
+j j
+r ɾ
+ṙ r
+l l̪
+ḣ ɧ
