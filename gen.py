@@ -6,45 +6,32 @@ np.random.seed(0)
 
 
 def trans(w):
-    v_a = ["i", "y", "ī", "ū", "ü", "u", "e", "ø", "o", "ä", "ö", "ā", "a"]
+    v_a = ["i", "y", "ï", "ü", "u", "ë", "ö", "o", "e", "ä", "a"]
     c_a = [
         "m",
         "n",
-        "ṅ",
-        "ŋ",
         "p",
         "b",
         "t",
         "d",
-        "c",
         "k",
         "g",
-        "q",
-        "ġ",
-        "t̠ʃ",
-        "d̠ʒ",
-        "pɸ",
-        "bβ",
-        "p̪f",
-        "b̪v",
+        "c",
+        "ǵ",
         "s",
         "z",
-        "ʃ",
-        "ʒ",
-        "ɸ",
-        "β",
+        "ś",
+        "j",
         "f",
         "v",
-        "θ",
+        "þ",
         "ð",
         "ç",
         "x",
-        "χ",
-        "h",
-        "ɾ",
         "r",
-        "l̪",
-        "ɧ",
+        "ŕ",
+        "l",
+        "h",
     ]
 
     for i, x in enumerate(v_a):
@@ -53,17 +40,16 @@ def trans(w):
     for i, x in enumerate(c_a):
         w = w.replace(c[i], x)
 
-    for x in t:
-        w = w.replace(x, "")
+    # for x in t:
+    #     w = w.replace(x, "")
 
     return w
 
 
-v = ["i", "y", "ɨ", "ʉ", "ɯ", "u", "e", "ø", "o", "ɛ", "ɔ", "ɐ", "ɑ"]
+v = ["i", "y", "ɨ", "ʉ", "u", "e", "ø", "o", "ɛ", "ɔ", "ɑ"]
 c = [
     "m",
     "n",
-    "ɲ",
     "p",
     "b",
     "t̪",
@@ -72,8 +58,6 @@ c = [
     "g",
     "t̠ʃ",
     "d̠ʒ",
-    "pɸ",
-    "bβ",
     "s",
     "z",
     "ʃ",
@@ -84,15 +68,13 @@ c = [
     "ð",
     "ç",
     "x",
-    "χ",
-    "h",
     "ɾ",
     "r",
     "l̪",
     "ɧ",
 ]
 
-s = np.array(np.meshgrid(v, v, v)).T.reshape(-1, 3)
+s = np.array(np.meshgrid(c, v)).T.reshape(-1, 2)
 
 s1 = list(map(lambda a: "".join(["".join(x) for x in a]), s))
 
@@ -104,14 +86,19 @@ np.random.shuffle(s1)
 # np.random.shuffle(s2)
 
 r = ""
+#examples = list(map(trans, s1[0:100]))
+#print(len(s1), examples)
 
-print(len(s1), s1[10:20])
+#pyclip.copy(" ".join(examples))
 
 for i, x in enumerate(s1):
-    r += f"{x}    {{}}\n"
+    r += f"{trans(x)}\n"
+
+with open("output.txt", "w") as file:
+    file.write(r)
 
 # print(r)
-pyclip.copy(r)
+# pyclip.copy(r)
 
 """
 """

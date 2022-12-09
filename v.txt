@@ -1,0 +1,8 @@
+a[b] a | [b] "cat |" "team | 2"
+a[*] = b[*] a | b "1 + 1 2 | 3 - 1"
+a[x] = b a [x] | b "cat | yellow fur" "cat fur | yellow"
+a[b] a | b "cat | fur"
+b[a] a | b "fur | cat"
+a[x] => b[y] a [x] | b [y] "bob | the park" "current time | deadline hour"
+[* == a] | a "| red"
+!a | a "| false == true"
