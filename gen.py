@@ -1,4 +1,3 @@
-from secrets import choice
 import numpy as np
 import pyclip
 
@@ -86,10 +85,10 @@ np.random.shuffle(s1)
 # np.random.shuffle(s2)
 
 r = ""
-#examples = list(map(trans, s1[0:100]))
-#print(len(s1), examples)
+# examples = list(map(trans, s1[0:100]))
+# print(len(s1), examples)
 
-#pyclip.copy(" ".join(examples))
+# pyclip.copy(" ".join(examples))
 
 for i, x in enumerate(s1):
     r += f"{trans(x)}\n"
