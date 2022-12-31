@@ -11,13 +11,13 @@ p p
 b b
 t t̪
 d d̪
-k k
+c k
 g g
 ' ʔ
 ć t̠ʃ
 s s
 z z
-c ʃ
+ʃ ʃ
 f ɸ
 v β
 þ θ
@@ -25,5 +25,6 @@ v β
 r ɾ
 ŕ r
 l l̪
+ɧ
 & kǀ
 ! kǃ

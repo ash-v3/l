@@ -1,0 +1,13 @@
+-a -> -ae
+-e -> -ea
+-i -> -ui
+-o -> -eo
+-u -> -ue
+-y -> -ya
+
+present: r
+past: d
+future: v
+
+real: 'e
+theoretical: 'i

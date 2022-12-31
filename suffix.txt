@@ -4,6 +4,6 @@
 -nomo == nominal
 -ito == small
 -iso == large
--isimo == huge
+-isímo == huge
 -le == suitable
 -be == possible

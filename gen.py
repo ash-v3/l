@@ -1,62 +1,30 @@
 import numpy as np
-import pyclip
 
 np.random.seed(0)
 
-
-def trans(w):
-    v_a = ["i", "y", "ï", "ü", "u", "ë", "ö", "o", "e", "ä", "a"]
-    c_a = [
-        "m",
-        "n",
-        "p",
-        "b",
-        "t",
-        "d",
-        "k",
-        "g",
-        "c",
-        "ǵ",
-        "s",
-        "z",
-        "ś",
-        "j",
-        "f",
-        "v",
-        "þ",
-        "ð",
-        "ç",
-        "x",
-        "r",
-        "ŕ",
-        "l",
-        "h",
-    ]
-
-    for i, x in enumerate(v_a):
-        w = w.replace(v[i], x)
-
-    for i, x in enumerate(c_a):
-        w = w.replace(c[i], x)
-
-    # for x in t:
-    #     w = w.replace(x, "")
-
-    return w
-
-
-v = ["i", "y", "ɨ", "ʉ", "u", "e", "ø", "o", "ɛ", "ɔ", "ɑ"]
+v = ["i", "y", "u", "e", "o", "ɑ"]
+t = ["˥", "˦", "˧", "˨", "˩"]
+a = ["", "́", "̀", "̇"]
+m = ["", "̄"]
 c = [
     "m",
     "n",
+    "ɲ",
     "p",
     "b",
     "t̪",
     "d̪",
     "k",
     "g",
+    "q",
+    "t̪s̪",
+    "d̪z̪",
     "t̠ʃ",
     "d̠ʒ",
+    "pɸ",
+    "bβ",
+    "t̪θ",
+    "d̪ð",
     "s",
     "z",
     "ʃ",
@@ -65,15 +33,47 @@ c = [
     "β",
     "θ",
     "ð",
-    "ç",
-    "x",
     "ɾ",
     "r",
     "l̪",
     "ɧ",
 ]
 
-s = np.array(np.meshgrid(c, v)).T.reshape(-1, 2)
+t_p = ["", "", "", "", ""]
+c_p = [
+    "m",
+    "n",
+    "ṅ",
+    "p",
+    "b",
+    "t",
+    "d",
+    "c",
+    "g",
+    "q",
+    "ṡ",
+    "ż",
+    "c̄",
+    "j̄",
+    "ḟ",
+    "v̇",
+    "þ̇",
+    "ð̇",
+    "s",
+    "z",
+    "s̄",
+    "j",
+    "f",
+    "v",
+    "þ",
+    "ð",
+    "r",
+    "ṙ",
+    "l",
+    "h",
+]
+
+s = np.array(np.meshgrid(c, v, m, a, t)).T.reshape(-1, 5)
 
 s1 = list(map(lambda a: "".join(["".join(x) for x in a]), s))
 
@@ -85,13 +85,13 @@ np.random.shuffle(s1)
 # np.random.shuffle(s2)
 
 r = ""
-# examples = list(map(trans, s1[0:100]))
-# print(len(s1), examples)
+examples = list(s1[0:100])
+print(len(s1), examples)
 
 # pyclip.copy(" ".join(examples))
 
 for i, x in enumerate(s1):
-    r += f"{trans(x)}\n"
+    r += f"{x}\n"
 
 with open("output.txt", "w") as file:
     file.write(r)

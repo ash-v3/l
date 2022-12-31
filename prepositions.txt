@@ -5,7 +5,7 @@ so == b[a]
 i == in
 pa == for
 u == with (direct object or manipulated object)
-co == together
+ko == together
 ob == towards, against
 vid == by (location)
 via == by (method)

@@ -1,6 +1,6 @@
 personal:
 1st
-va -> vae
+ia -> iae
 
 2nd:
 sa -> sae
@@ -10,7 +10,7 @@ ca -> cae
 
 object: ita -> itae
 indefinite: sea -> seae
-null: øsa -> øsae
+null: osa -> osae
 
 demonstrative:
 uisa == this
