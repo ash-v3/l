@@ -2,7 +2,7 @@ import numpy as np
 
 np.random.seed(0)
 
-v = ["i", "y", "u", "e", "o", "ɑ"]
+v = ["i", "y", "u", "e", "o", "a"]
 t = ["˥", "˦", "˧", "˨", "˩"]
 a = ["", "́", "̀", "̇"]
 m = ["", "̄"]
@@ -17,14 +17,10 @@ c = [
     "k",
     "g",
     "q",
-    "t̪s̪",
-    "d̪z̪",
     "t̠ʃ",
     "d̠ʒ",
     "pɸ",
     "bβ",
-    "t̪θ",
-    "d̪ð",
     "s",
     "z",
     "ʃ",
@@ -43,7 +39,7 @@ t_p = ["", "", "", "", ""]
 c_p = [
     "m",
     "n",
-    "ṅ",
+    "ṅ",
     "p",
     "b",
     "t",
@@ -51,14 +47,12 @@ c_p = [
     "c",
     "g",
     "q",
-    "ṡ",
+    "ṡ",
     "ż",
     "c̄",
     "j̄",
-    "ḟ",
+    "ḟ",
     "v̇",
-    "þ̇",
-    "ð̇",
     "s",
     "z",
     "s̄",
@@ -68,16 +62,19 @@ c_p = [
     "þ",
     "ð",
     "r",
-    "ṙ",
+    "ṙ",
     "l",
     "h",
 ]
 
-s = np.array(np.meshgrid(c, v, m, a, t)).T.reshape(-1, 5)
+s = np.array(np.meshgrid(c_p, v, m, a, t_p)).T.reshape(-1, 5)
 
 s1 = list(map(lambda a: "".join(["".join(x) for x in a]), s))
 
-np.random.shuffle(s1)
+def sortfunc(x):
+    return sum((-1)**(i) * ord(c) for i, c in enumerate(x))
+
+s1.sort(key = sortfunc)
 
 # s2 = np.array(np.meshgrid(s1, s1)).T.reshape(-1, 2)
 # s2 = list(map(lambda a: "".join(["".join(x) for x in a]), s2))
